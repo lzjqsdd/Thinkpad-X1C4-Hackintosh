@@ -14,9 +14,12 @@ Thinpad X1 Carbon 4th(2016) Hackintosh EFI
 - [x] Native Buletooth
 - [x] Battery status
 - [X] HDMI output works fine
-- [X] mini DP may cause build-in display black screen
+- [ ] mini DP may cause build-in display black screen
 
 # Update
+## 2020-10-26
+- Add CPUFriend Kext to keep cpu in low frequency 800Hz, and high frequency keep normal
+
 ## 2020-10-25
 - Fix battery status by SSDT patch (https://github.com/RehabMan/Laptop-DSDT-Patch/blob/master/battery/battery_Lenovo-X230i.txt)
 - Trackpad settings in SystemSettings works when battery fix. Before fix, the trackpad setting only try to find bluetooth trackpad devices, i guess it may think this is not a laptop when battey status broken
@@ -32,3 +35,5 @@ Thinpad X1 Carbon 4th(2016) Hackintosh EFI
 - https://github.com/OpenIntelWireless/itlwm, help fix intel wifi. Note: Download itlwm.kext(not airportitlwm.kext)
 - https://github.com/OpenIntelWireless/IntelBluetoothFirmware, help fix buletooth
 - https://github.com/OpenIntelWireless/HeliPort, help choose wifi, client for itlwm
+- https://github.com/stevezhengshiqi/one-key-cpufriend, add cpu frequency control, current setting keep low frequency to 800hz (
+suitable for me that condider more about battery life for laptop),  can use [Inter Power Gadget Tool](https://software.intel.com/content/www/us/en/develop/articles/intel-power-gadget.html) to monitor if your settings works
