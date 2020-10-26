@@ -17,6 +17,11 @@ Thinpad X1 Carbon 4th(2016) Hackintosh EFI
 - [ ] mini DP may cause build-in display black screen
 
 # Update
+## 2020-10-27
+- Change ACPIBatteryManager to SMCBatteryManager(Both kext works, but SMCBatteryManager more situable for VirtualSMC)
+- Change itlwm to Airportitlwm, now can use native wifi manager and position service.(no need use Heiport), need Enable AppleSecureBoot in opencore config
+
+
 ## 2020-10-26
 - Add CPUFriend Kext to keep cpu in low frequency 800Hz, and high frequency keep normal
 
